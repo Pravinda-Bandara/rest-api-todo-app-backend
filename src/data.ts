@@ -10,7 +10,17 @@ export const sampleTasks = [
         email: "jane.smith@example.com"
     },
     {
-        description: "Review client feedback",
+        description: "Review client feedback 1",
+        status: true,
+        email: "alex.jones@example.com"
+    },
+    {
+        description: "Review client feedback 2",
+        status: true,
+        email: "alex.jones@example.com"
+    },
+    {
+        description: "Review client feedback 3",
         status: true,
         email: "alex.jones@example.com"
     }
