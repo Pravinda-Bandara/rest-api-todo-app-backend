@@ -1,12 +1,13 @@
 import express, {Router} from "express";
-import {getAllTasks, saveTask, updateTask} from "../controllers/taskController.js";
+import {deleteTask, getAllTasksByEmail, saveTask, updateTask} from "../controllers/taskController.js";
+
 
 
 export const taskRoute=express.Router()
 
-taskRoute.get('/',getAllTasks)
+taskRoute.get('/',getAllTasksByEmail)
 taskRoute.post('/',saveTask)
 taskRoute.patch('/:id',updateTask)
-//taskRoute.delete('/:id',deleteTask)
+taskRoute.delete('/:id',deleteTask)
 
 
